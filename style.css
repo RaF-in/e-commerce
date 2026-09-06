@@ -148,6 +148,10 @@ body {
     color:cadetblue;
 }
 
+.line-margin {
+    margin: 50px 50px 10px 50px;
+}
+
 #feature {
     display: flex;
     justify-content: center;
@@ -172,7 +176,7 @@ body {
 }
 
 .feature-box:hover {
-    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.6);
+    box-shadow: 8px 8px 5px cadetblue;
 }
 
 #logo_top {
@@ -226,14 +230,10 @@ body {
     color:#10B981;
 }
 
-#featured_prods {
-    margin: 50px 50px 10px 50px;
-}
-
 #featured_prod_boxes {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
 }
 
 .featured_prod_box {
@@ -247,13 +247,13 @@ body {
 }
 
 .featured_prod_box:hover {
-    box-shadow: 15px 23px 10px rgba(0, 0, 0, 0.06);
+    box-shadow: 15px 7px 15px rgba(0, 0, 0, 0.6);
 }
 
 .featured_prod_box img {
     width: 100%;
     margin-bottom: 15px;
-    height:400px;
+    height:300px;
     object-fit: cover;
 }
 
@@ -292,6 +292,154 @@ body {
 .featured_prod_cart:hover {
     box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.06);
     border: 1px dotted rgba(0, 0, 0, 0.06);
+}
+
+.banner-common {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    font-weight:600;
+}
+
+.banner-common-elements {
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: center;
+    font-weight:600;
+}
+
+#call-to-act-banner {
+    background-image: url("img/banner/b1_.jpg");
+}
+
+#call-to-act-banner p{
+    color:#10B981;
+    font-size:30px;
+    font-weight:800;
+}
+
+#call-to-act-banner h1{
+    font-size:40px;
+    margin-top:20px;
+}
+
+#call-to-action-banner {
+    display:flex;
+    color:white;
+    height:70vh;
+    gap: 20px;
+}
+
+#call-to-action-banner h4{
+    font-size:25px;
+    font-weight:150;
+}
+
+#call-to-action-banner h1{
+    font-size:40px;
+    font-weight:600;
+}
+
+#call-to-action-banner p{
+    font-size:20px;
+    font-weight:450;
+}
+
+#call-to-action-banner-1{
+    background-image: url("img/banner/b4.jpg");
+    background-size: cover;
+    background-position:center;
+    width:50%;
+    margin-right:30px;
+}
+
+#call-to-action-banner-2{
+    background-image: url("img/banner/b5.jpg");
+    background-size: cover;
+    background-position:left 10%;
+    width:50%;
+}
+
+.banner-button{
+    font-size:25px;
+    margin-top:20px;
+    border:1px solid transparent;
+    padding: 20px 20px;
+    border-radius: 3px;
+}
+
+.banner-button:hover,
+#call-to-action-banner-1:hover button,
+#call-to-action-banner-2:hover button{
+    background-color: #10B981;
+}
+
+
+#call-to-act-banner h1 span{
+    color:red;
+}
+
+.banner-padding {
+    padding: 40px 40px;
+}
+
+#newsletter {
+    text-align: center;
+    background-image: url("img/news.jpeg");
+    color:white;
+    padding:30px 30px;
+    display:flex;
+    justify-content: space-between;
+    padding: 50px 50px;
+}
+
+#news-text{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#news-text h2{
+    font-size:35px;
+}
+
+#news-text p{
+    font-weight:250;
+}
+
+#news-signup {
+    display:flex;
+    flex-direction: row;
+    width:40%;
+}
+
+#news-signup button{
+    white-space: nowrap;
+    padding:0px 10px 0px 10px;
+    font-size:20px;
+    border:1px solid transparent;
+    border-radius:4px;
+    width: 20%;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    background-color:#10B981;
+}
+
+#news-signup button:hover{
+    background-color:burlywood;
+}
+
+#news-signup-input {
+    padding:20px 0px 20px 5px;
+    width:100%;
+    border:1px solid transparent;
+    font-size:20px;
+    outline: none;
+    border-radius: 4px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
 }
 
 
